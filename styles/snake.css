@@ -1,0 +1,132 @@
+body {
+	background-image: url(images/background.jpg);
+	background-size: 100%;
+	font-family: "Open Sans",  Impact;
+}
+
+body:after {
+  display: none;
+  content:
+    url(images/bronza_izho.png);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.area {
+  opacity: 0;
+  z-index: 20;
+  margin-top: 2%;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: blur 2s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+	  0px 0px 0px #000,
+	  0px 0px 0px #000,
+	  0px 0px 0px #000,
+	  0px 0px 0px #fff,
+	  0px 0px 0px #fff,
+	  0px 0px 0px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
+  }
+}
+
+.knopka01 {
+  opacity: 1;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(255,255,255,.2), 0 -1px rgba(0,0,0,.8);
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  background: rgb(28,107,114) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
+  box-shadow: inset rgba(0,0,0,.6) 0 -2px 5px, inset rgba(252,255,255,.7) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
+  color: rgb(238,229,222);
+  user-select: none;
+} 
+.knopka01:hover {
+  color: rgb(0,59,66);
+  cursor: pointer;
+}
+.knopka01:active {
+  padding-bottom: 1px;
+  box-shadow:
+   inset rgba(0,0,0,1) 0 1px 3px,
+   inset rgba(0,0,0,.6) 0 -2px 5px,
+   inset rgba(252,255,255,.7) 0 2px 5px,
+   0 1px rgba(255,255,255,.08);
+  color: rgb(128,207,214);
+}
+
+#startbtn {
+	z-index: 20;
+	text-align: center;
+	font-size: 150%;
+	padding-left: 0;
+}
+
+#startbtn:hover {
+	cursor: pointer;
+}
+
+#board {
+	position: fixed;
+	background-color: #000;
+	opacity: 0.4;
+	z-index: 10;
+	color: #00f;
+	text-align: center;
+	text-shadow: 0 0 10px #fff, 
+		0 0 20px #fff,
+		0 0 30px #fff,
+		0 0 40px #ff00de,
+		0 0 70px #ff00de,
+		0 0 80px #ff00de,
+		0 0 100px #ff00de,
+		0 0 150px #ff00de;
+}
+	
+#scoreboard {
+	display: inline-block;
+	z-index: 20;
+	opacity: 1;
+	color: #f00;
+}
+
+#rankimg {
+	z-index: 30;
+}
+
+#rank {
+	color: #fff;
+	text-shadow: 0 0 20px #fefcc9,
+	10px -10px 30px #feec85,
+	-20px -20px 40px #ffae34,
+	20px -40px 50px #ec760c,
+	-20px -60px 60px #cd4606,
+	0 -80px 70px #973716,
+	10px -90px 80px #451b0e;
+}
